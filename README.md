@@ -168,10 +168,10 @@ Create a resource group to contain your Azure Spring Cloud service.
         --location ${REGION}
 ```
 
-Create an instance of Azure Spring Cloud.
+Create an instance of Azure Spring Cloud. The Service name can contain only lowercase letters, numbers and hyphens.
 
 ```bash
-    az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
+    az spring create --name ${SPRING_CLOUD_SERVICE} \
             --sku standard \
             --sampling-rate 100 \
             --resource-group ${RESOURCE_GROUP} \
